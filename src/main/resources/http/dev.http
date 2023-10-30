@@ -1,0 +1,54 @@
+// Mock1 API
+
+GET {{url}}/mock1s
+
+###
+
+GET {{url}}/mock1s/6
+
+###
+
+POST {{url}}/mock1s
+Content-Type: application/json
+
+{
+  "hotelName": "Holiday Inn",
+  "hotelAddress": "Stuttgart",
+  "hotelType": "STANDARD"
+}
+
+###
+
+PUT {{url}}/mock1s/4
+Content-Type: application/json
+
+{
+  "hotelName": "Ritz Carlton",
+  "hotelAddress": "London City",
+  "hotelType": "LUXURY"
+}
+
+###
+
+DELETE {{url}}/mock1s/5
+
+###
+
+// Mock2 API
+
+GET {{url}}/mock2s
+
+###
+
+GET {{url}}/mock2s/1
+
+###
+
+POST {{url}}/mock2s/mock1/3
+Content-Type: application/json
+
+{
+  "roomNumber": 11,
+  "roomPrice": 1150,
+  "roomType": "SINGLE"
+}
